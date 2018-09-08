@@ -27,11 +27,7 @@ def turn(board)
 end
 
 def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil
-    FALSE
-  else 
-    TRUE
-  end
+  board[index] != " "
 end
 
 def move(board, user_input, char = "X")
